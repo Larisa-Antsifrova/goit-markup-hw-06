@@ -1016,14 +1016,20 @@ img {
 
 .checkbox {
 	position: absolute;
-	/* -webkit-appearance: none; */
+
+	/* -webkit-appearance: none;
+	-moz-appearace: none;
+	appearace: none */
+
 	height: 1px;
 	width: 1px;
 	overflow: hidden;
 	clip: rect(0 0 0 0);
 }
 
-.icon-checkbox {
+/* Custom checkbox as background image (Makeev's video) */
+
+/* .icon-checkbox {
 	position: absolute;
 	top: 50%;
 	left: 0;
@@ -1036,6 +1042,32 @@ img {
 
 .checkbox:checked + .icon-checkbox {
 	background-image: url(../images/icons/checked-checkbox.svg);
+} */
+
+/* Custom checkbox via CSS and svg check icon (Sasha's video and homework description) */
+
+.icon-checkbox {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	width: 16px;
+	height: 15px;
+
+	background-color: var(--primary-white-color);
+	border: 2px solid var(--primary-black-color);
+	border-radius: 2px;
+	background-color: var(--primary-white-color);
+
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox:checked + .icon-checkbox {
+	background-image: url(../images/icons/check.svg);
+	background-size: contain;
+	background-color: var(--accent-color);
+	background-origin: border-box;
+	border: transparent;
 }
 
 .checkbox:focus + .icon-checkbox {
