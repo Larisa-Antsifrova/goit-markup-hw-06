@@ -921,7 +921,6 @@ img {
 }
 
 .modal-form-item {
-	position: relative;
 	display: block;
 	margin-bottom: 10px;
 }
@@ -953,10 +952,16 @@ img {
 	transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.icon-wrap {
+	position: relative;
+}
+
 .modal-form-icon {
 	position: absolute;
 	top: 50%;
 	left: 12px;
+	transform: translateY(-50%);
+
 	height: 18px;
 	width: 18px;
 
