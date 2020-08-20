@@ -417,12 +417,13 @@
 					</div>
 				</div>
 
+		<!-- Subscription Form -->
 				<div class="footer-information form">
 					<div>
 						<p class="call-to-action"><b>Подпишитесь на рассылку</b></p>
-						<form>
-							<input type="email" placeholder="E-mail" />
-							<button class="form-button">Подписаться
+						<form class="subscribe-form">
+							<input class="footer-email-input" type="email" name="email" placeholder="E-mail" />
+							<button type="submit" class="form-button">Подписаться
 								<svg class='button-icon'>
 									<use href='./images/icons/sprite.svg#icon-plane'></use>
 								</svg>
@@ -437,6 +438,35 @@
 
 		<div class="modal-backdrop is-hidden" data-modal>
 			<div class="modal">
+				<h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+
+				<form class="modal-form">
+					<label class="modal-form-item"> 
+						<span class="label-title">Имя</span> 
+						<input type="text" name="name" class="modal-form-field">
+					</label>
+					<label class="modal-form-item"> 
+						<span class="label-title">Телефон</span>
+						<input type="tel" name="tel" class="modal-form-field">
+					</label>
+					<label class="modal-form-item"> 
+						<span class="label-title">Почта</span>
+						<input type="email" name="email" class="modal-form-field">
+					</label>
+					<label class="modal-form-item"> 
+						<span class="label-title">Комментарий</span>
+						<textarea name="comment" cols="30" rows="10" class="modal-form-field"></textarea>
+					</label>
+
+
+					<label >
+						<input type="checkbox" name="agreement">
+						Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a> 
+					</label>
+					<button type="submit">Отправить</button>
+				</form>
+
+
 				<button class="close-button" data-modal-close>
 					<svg class="close-button-icon">
 						<use href="./images/icons/sprite.svg#icon-close-button"></use>
