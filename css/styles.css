@@ -1012,7 +1012,20 @@ img {
 }
 
 .agreement-link {
+	display: inline-block;
+	position: relative;
 	color: var(--accent-color);
+}
+
+.agreement-link::after {
+	content: " ";
+	position: absolute;
+	left: 0;
+	bottom: 5px;
+
+	width: 100%;
+	height: 1px;
+	background-color: var(--accent-color);
 }
 
 .checkbox {
