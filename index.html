@@ -422,7 +422,7 @@
 					<div>
 						<label for="footer-email-input" class="call-to-action"><b>Подпишитесь на рассылку</b></label>
 						<form class="subscribe-form" autocomplete="off">
-							<input id="footer-email-input" class="footer-email-input" type="email" name="email" placeholder="E-mail" />
+							<input id="footer-email-input" class="footer-email-input" type="email" name="email" placeholder="E-mail" required />
 							<button type="submit" class="form-button">Подписаться
 								<svg class='button-icon'>
 									<use href='./images/icons/sprite.svg#icon-plane'></use>
@@ -443,21 +443,21 @@
 				<form class="modal-form" autocomplete="off">
 					<label class="modal-form-item"> 
 						<span class="label-title">Имя</span> 
-						<input type="text" name="name" class="modal-form-field">
+						<input type="text" name="name" class="modal-form-field" required>
 						<svg class="modal-form-icon"> 
 							<use href="./images/icons/sprite.svg#icon-name-input"></use>
 						</svg>
 					</label>
 					<label class="modal-form-item"> 
 						<span class="label-title">Телефон</span>
-						<input type="tel" name="tel" class="modal-form-field">
+						<input type="tel" name="tel" class="modal-form-field" required>
 						<svg class="modal-form-icon"> 
 							<use href="./images/icons/sprite.svg#icon-tel-input"></use>
 						</svg>
 					</label>
 					<label class="modal-form-item"> 
 						<span class="label-title">Почта</span>
-						<input type="email" name="email" class="modal-form-field">
+						<input type="email" name="email" class="modal-form-field" required>
 						<svg class="modal-form-icon"> 
 							<use href="./images/icons/sprite.svg#icon-email-input"></use>
 						</svg>
@@ -468,7 +468,7 @@
 					</label>
 <div class="agreement-block">
 					<label class="agreement-field">
-						<input class="checkbox" type="checkbox" name="checkbox">
+						<input class="checkbox" type="checkbox" name="checkbox" required>
 						<span class="icon-checkbox"></span>
 							
 					Соглашаюсь с рассылкой и принимаю <a href="#" class="agreement-link link">Условия договора</a> 
