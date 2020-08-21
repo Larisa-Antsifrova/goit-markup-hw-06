@@ -23,7 +23,7 @@ html {
 
 *:focus {
 	outline-color: var(--accent-color);
-	outline-offset: 5px;
+	outline-offset: 2px;
 	outline-style: solid;
 }
 
